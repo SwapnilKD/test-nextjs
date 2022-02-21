@@ -1,18 +1,18 @@
-import { Form, Select, InputNumber, Switch, Slider, Button } from 'antd'
+import { Form, Select, InputNumber, Switch, Slider, Button } from "antd";
 
 // Custom DatePicker that uses Day.js instead of Moment.js
-import DatePicker from '../components/DatePicker'
+import DatePicker from "../components/DatePicker";
 
-import { SmileFilled } from '@ant-design/icons'
+import { SmileFilled } from "@ant-design/icons";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-const FormItem = Form.Item
-const Option = Select.Option
+const FormItem = Form.Item;
+const Option = Select.Option;
 
 const content = {
-  marginTop: '100px',
-}
+  marginTop: "100px",
+};
 
 export default function Home() {
   return (
@@ -22,6 +22,10 @@ export default function Home() {
           <a className="logo mr-0">
             <SmileFilled size={48} strokeWidth={1} />
           </a>
+        </Link>
+
+        <Link href="/mytable">
+          <a className="logo mr-0">MyTable</a>
         </Link>
 
         <p className="mb-0 mt-3 text-disabled">Welcome to the world !</p>
@@ -100,5 +104,5 @@ export default function Home() {
         </Form>
       </div>
     </div>
-  )
+  );
 }
